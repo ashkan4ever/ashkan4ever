@@ -1,0 +1,20 @@
+.menuButton{
+    border: 1px solid #787878;
+    padding: 8px 16px;
+    color: #787878;
+    text-decoration: none;
+    width: 150px;
+    display: inline-block;
+    text-align: center;
+    background-color: white;
+    cursor: pointer;
+}
+.menuButton.active{
+    border: 1px solid black;
+    color: black;
+    box-shadow: 0 3px 4px -1px grey;
+}
+.menuButton:hover{
+    border: 1px solid black;
+    color: black;
+}

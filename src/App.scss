@@ -1,0 +1,208 @@
+*{
+    box-sizing: border-box;
+    line-height: 25px;
+    outline: none;
+}
+a:hover{
+    text-decoration: none;
+}
+*:focus{
+    outline: none !important;
+}
+
+.layout{
+    display: flex;
+    flex-direction: column;
+    width: 1000px;
+    margin: auto;
+
+    .header{
+        display: flex;
+        flex-direction: column;
+
+        .me{
+            display: flex;
+            height: 450px;
+            align-items: center;
+            padding: 16px;
+
+            #profileImage{
+                border-radius: 100%;
+                width: 150px;
+                height: 150px;
+                margin-right: 34px;
+            }
+        }
+
+        .menu{
+            display: flex;
+            justify-content: space-between;
+            // margin: auto;
+            padding: 8px;
+        }
+
+        hr{
+            border: 1px solid black;
+            width: 100%;
+            // margin-top: 0;
+        }
+    }
+
+    .children{
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+}
+
+.contactPage{
+    display: flex;
+
+    &>div{
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+
+    .desc{
+        padding-right: 40px;
+        text-align: justify;
+
+        p{
+            margin-top: 0;
+        }
+    }
+
+    .form{
+        input, textarea{
+            border: 1px solid #787878;
+            padding: 10px 16px;
+            color: #787878;
+            text-decoration: none;
+            width: 150px;
+            display: inline-block;
+            // text-align: center;
+            width: 100%;
+            margin-bottom: 44px;
+            resize: none;
+            overflow: auto;
+            outline: none;
+        }
+        input:hover, input:focus, textarea:hover, textarea:focus{
+            border: 1px solid black;
+            color: black;
+        }
+    }
+}
+
+.blogsPage{
+    display: flex;
+
+    .box{
+        width: 280px;
+        height: 400px;
+        margin-right: 45px;
+        border: 1px solid grey;
+        padding: 24px;
+        cursor: pointer;
+
+        img{
+            width: 220px;
+            height: 200px;
+            margin: 5px auto;
+        }
+
+        h2{
+            font-weight: normal;
+        }
+    }
+    .box:hover{
+        border: 1px solid black;
+        color: black;
+        box-shadow: 0 5px 10px 0px grey;
+    }
+}
+
+.accordion{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    .card-body{
+        padding: 0;
+    }
+}
+
+.companiesPage{
+    .companyHeader{
+        background-color: white;
+        border: none;
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+        margin: 24px 0;
+
+        img{
+            height: 35px;
+        }
+
+        .title{
+            font-weight: bold;
+            font-size: 25px;
+            margin-bottom: 5px;
+            margin-left: 5px;        
+        }
+
+        span{
+            margin-left: 15px;
+        }
+
+        span:last-child{
+            margin-left: auto;
+        }
+    }
+
+    .companyContainer{
+        display: flex;
+
+        .companyDesc{
+            width: 70%;
+            margin-right: 20px;
+        }
+
+        .companyRecoms{
+            width: 30%;
+
+            .recomContainer{
+                border: 1px solid black;
+                padding: 10px;
+                display: flex;
+                border-radius: 5px;
+                margin-bottom: 18px;
+
+                img{
+                    height: 40px;
+                    width: 40px;
+                    border-radius: 100%;
+                    margin-right: 10px;
+                }
+
+                p{
+                    margin-bottom: 0;
+                }
+            }
+        }
+    }
+}
+
+.aboutPage{
+    .skillHeader{
+        background-color: white;
+        border: none;
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 1px solid black;
+        padding: 5px 0;
+        margin: 24px 0;
+    }
+}
